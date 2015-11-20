@@ -22,17 +22,26 @@ public class A7Q1 {
         int n = in.nextInt();
 
         int[] aryNums = new int[n];
-        n = n + 1;
+        int mark;
+        int previous = 0;
 
 
         System.out.println("Enter the marks");
-        for (int students = n; students > 0; students--) {
-            int mark = in.nextInt();
+        for (int students = 0; students < n; students++) {
+             mark = in.nextInt();
             aryNums[students] = mark;
+          previous = mark + previous; 
+            int total = previous + mark;
+            if(students == (n - 1)){
+                double answer = ((total - mark)/n);
+                        answer = Math.round(answer*100)/100.0;
+
+                System.out.println("The average is " + answer);
+            }
         }
+            
 
-
-        System.out.println("The average is ");
+        
 
 
     }
