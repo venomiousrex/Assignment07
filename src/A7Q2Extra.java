@@ -2,21 +2,22 @@
 import java.util.Scanner;
 
 /*
- * To change this template, choose Tools | Templates
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
 /**
  *
- * @author hadik9595
+ * @author Administrator
  */
-public class A7Q2 {
+public class A7Q2Extra {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+       Scanner in = new Scanner(System.in);
         
         int height;
           System.out.println("How many people are calculating average of height for? in Centemeter");
@@ -31,23 +32,15 @@ public class A7Q2 {
              height = in.nextInt();
             aryNums[people] = height;
           previous = height + previous; 
-          
-       if(people == (n - 1)){
-                 average = ((previous)/n);
-                 System.out.println("Average is "+average);
-                 for(people = people; people > 0; ){
-                     aryNums[people] = height;
-                     
-                     if(average < aryNums[people] ){
-                         
-                     System.out.println("The heights.. " +  aryNums[people]);
-                    people--;
-                 }else{
-                         people--;
-                     }
-                 }
-}
+       
+                 
     }
-}
-}
+        
+                     }
+    public static double calculation(int n){
+        
+    }
+                 }
+
+
 
