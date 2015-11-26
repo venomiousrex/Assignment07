@@ -56,9 +56,18 @@ public class A7Q5 {
             System.out.println("In the ascending order..");
             for(int ascending = 0; ascending < n; ascending++){
             System.out.println(array[ascending]);
+            
             if(ascending == n-1){
-                double median = ascending/2;
-                System.out.println(median);
+                
+                int median = (n/2);
+                int remainder = n%2;
+                if(remainder == 0){
+                    int next = median + 1;
+                    median = array[median] + array[next];
+                   int answer = median/2;
+                    
+                }
+                System.out.println("Median.. " +array[median]);
             }
             
         }
