@@ -22,21 +22,19 @@ public class A7Q7 {
         Scanner in = new Scanner(System.in);
         
         int zero = 0;
-        int[] array = new int [1000];
-        for(int i = 2; i < 13; i++){
-        for(int p = 0; p <1001; p = p + i){
-            
-            if(p <= 10 ){
-                System.out.println(p);
+        int[] array = new int [1001];
+        
+        
+        for(int i = 1; i <= 1000; i++){
+            for(int multiples = 2; multiples <=10; multiples = multiples + i){
+            array[i] = multiples;
             }
-                    
-            if(p >= 10){
-               array[i] = zero;
-            }
-             
+         
+           System.out.println(array[i]);
+        }
         }
            
         }
-    }
     
-}
+    
+
