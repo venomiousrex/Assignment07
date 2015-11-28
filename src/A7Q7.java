@@ -24,13 +24,20 @@ public class A7Q7 {
         int zero = 0;
         int[] array = new int [1001];
         
+        for(int i = 0; i <= 1000; i++ ){
+            array[i] = i;
+            System.out.println(array[i]);
+        }
         
-        for(int i = 1; i <= 1000; i++){
-            for(int multiples = 2; multiples <=10; multiples = multiples + i){
+        int i = 2;
+        for( i = 2; i <= 1000; i++ ){
+            for(int multiples = 2; multiples <=1000; ){
+                multiples = i + multiples;
             array[i] = multiples;
+            System.out.println(array[i]);
             }
          
-           System.out.println(array[i]);
+           
         }
         }
            
