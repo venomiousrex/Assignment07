@@ -17,7 +17,7 @@ public class A7Q7 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // Why can't we just use remainders and a while loop to find prime numbers
+        //Simplified 
         // Plan is to find first multiples of numbers < 10 and cross out those multiples over 10, then print out whats left.
         Scanner in = new Scanner(System.in);
         
@@ -26,22 +26,39 @@ public class A7Q7 {
         
         for(int i = 0; i <= 1000; i++ ){
             array[i] = i;
-            System.out.println(array[i]);
+//            System.out.println(array[i]);
         }
         
-        int i = 2;
-        for( i = 2; i <= 1000; i++ ){
-            for(int multiples = 2; multiples <=1000; ){
-                multiples = i + multiples;
-            array[i] = multiples;
-            System.out.println(array[i]);
+        for (int i = 2; i < 31; i++) {
+            for (int j = 2; j < array.length; j++) {
+               
+                
+                int temp = j*i;
+                
+               
+               if(temp <= 1000){
+                   
+                   array[temp] = 0;
+//               System.out.println(temp);
+               }
+               
+               
+              
+             
             }
-         
+        }
+         System.out.println("There");
+         for (int i = 0; i < array.length; i++) {
+             if (array[i] != 0) {
+                 System.out.println(array[i]);
+             }
+             
+        }
            
         }
         }
            
-        }
+        
     
     
 
